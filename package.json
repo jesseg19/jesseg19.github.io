@@ -1,0 +1,14 @@
+{
+  "name": "ryan_photgraphy",
+  "version": "1.0.0",
+  "description": "Ryan's portflio website",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Jesse Gross",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

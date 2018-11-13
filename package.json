@@ -4,7 +4,7 @@
   "description": "Ryan's portflio website",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Jesse Gross",
   "license": "MIT",

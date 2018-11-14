@@ -1,32 +1,66 @@
+@import "config";
+
 $main-image: url("../img/IMG_8742.jpg");
 
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-* {
-  box-sizing: border-box;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 body {
   background: $main-image;
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-nav {
-  float: right;
-  margin: 0px 4rem;
+.menu-nav {
+  list-style-type: none;
+  top: 0px;
 }
 
-.main-container {
+.main-text {
   text-align: center;
   margin-top: 30vh;
 }
-.main-text {
-  display: inline-block;
+
+.lg-heading {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sm-heading {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.main-home-btn {
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  color: black;
+  background-color: #ccc;
+  border: none;
+
+  &:hover {
+    background-color: #777;
+    @include easeOut();
+  }
+
+  a {
+    color: black;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }

@@ -1,9 +1,19 @@
 @import "config";
+@import "mobile";
 
-$main-image: url("../img/IMG_8742.jpg");
+$main-image: #000 url("../img/IMG_9426.jpg");
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
+}
+
+html {
+  &.home-page {
+    background: $main-image;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 40%;
+  }
 }
 
 a {
@@ -12,55 +22,307 @@ a {
 }
 
 body {
-  background: $main-image;
-  background-attachment: fixed;
-  background-size: cover;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.nav {
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+  padding: 0%;
+  z-index: 5;
 
-.menu-nav {
-  list-style-type: none;
-  top: 0px;
+  div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    @include easeOut();
+  }
+}
+.one {
+  width: 100%;
+}
+.two {
+  width: 66%;
+}
+.three {
+  width: 75%;
+}
+.nav:hover div {
+  width: 120%;
+}
+.btn-close {
+  border-radius: 10px;
+}
+
+.side-nav {
+  padding: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  border-radius: 5px;
+
+  a {
+    margin: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgba($color: #ccc, $alpha: 0.5);
+      border-radius: 3px;
+    }
+  }
+  .nav-options {
+    a {
+      width: 74%;
+    }
+  }
+
+  .dropdown-btn {
+    float: right;
+    margin: -40px 15px 0 0;
+    border: 0;
+    border-radius: 3px;
+    background: rgba(10, 10, 10, 0);
+    color: white;
+    text-justify: auto;
+    height: 30px;
+    width: 30px;
+    &:hover {
+      background-color: rgba($color: #ccc, $alpha: 0.5);
+    }
+  }
+  #dropdown-cont {
+    display: none;
+
+    a {
+      font-size: 95%;
+      margin-left: 40px;
+    }
+  }
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+#home {
+  padding: 1px 20vw;
+  text-align: center;
 }
 
 .main-text {
-  text-align: center;
-  margin-top: 30vh;
+  margin: auto;
+  margin-top: 19vh;
+  background: rgba(10, 10, 10, 0.65);
+  border-radius: 5px;
+  color: white;
+  padding: 1.5em;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lg-heading {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin: 0;
 }
-.sm-heading {
+.md-heading {
   font-size: 2em;
   font-weight: 400;
   margin: 0;
+}
+
+.sm-heading {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.icon {
+  font-size: 18px;
+  padding: 5px 0;
+
+  :hover {
+    color: rgba($color: white, $alpha: 0.6);
+    @include easeOut();
+  }
 }
 
 .main-home-btn {
   height: 30px;
   width: 150px;
   font-size: 20px;
-  color: black;
-  background-color: #ccc;
+  background-color: white;
   border: none;
-
-  &:hover {
-    background-color: #777;
-    @include easeOut();
-  }
+  margin-top: 0.5em;
+  border-radius: 7px;
 
   a {
     color: black;
   }
+  &:hover {
+    background-color: rgba($color: white, $alpha: 0.6);
+    @include easeOut();
+  }
+  header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
 }
 
-header {
+//about
+html {
+  &.about {
+    background: url("../img/neon_sign.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+
+    .about-main {
+      color: white;
+      margin-left: 5px;
+    }
+  }
+}
+
+//portfolio
+html {
+  &.port {
+    background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)),
+      url("../img/IMG_5892.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  .pic-type {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 9vh;
+  }
+  .img {
+    display: flex;
+    padding: 0 2vw;
+    z-index: 2;
+  }
+}
+
+//all picture pages
+nav {
   position: fixed;
-  z-index: 2;
-  width: 100%;
+  a {
+    margin-left: 1vw;
+  }
+}
+//contact
+html {
+  &.contact {
+    background: #333;
+    background-image: url("../img/contact-img.jpg");
+    background-size: 100% 700%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .main-contact {
+    text-align: center;
+    color: white;
+    a {
+      color: #999;
+    }
+  }
+}
+
+//BLACK AND WHITE
+.BandW-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.B-W-pics {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+//NIGHT SHOTS
+.nightpage-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.night-pics {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+//CITY SCAPES
+.city-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cityscape-pics {
+  width: 40vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+//PORTAITS
+.portrait-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.portraits-pics {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#wide-pics {
+  width: 100vw;
+  height: 65vw;
 }

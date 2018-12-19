@@ -1,49 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="home-page" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="street photography, toronto photos, the six, " >
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Welcome</title>
+    <meta
+      name="description"
+      content="street photography, toronto photos, the six"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Ryan Mchardy</title>
   </head>
+  <header>
+    <a href="#" class="nav" onclick="openSlideMenu()">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </a>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <div class="nav-options">
+        <a href="#">Home</a> <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <button class="dropdown-btn">
+          <i class="fa fa-angle-double-down"></i>
+        </button>
+        <div id="dropdown-cont">
+          <a href="B-W.html">Black and White</a>
+          <a href="night.html">Night Shots</a>
+          <a href="cityscape.html">City Scapes</a>
+          <a href="portraits.html">Portraits</a>
+        </div>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+  </header>
   <body>
-    <div class="branding">
-      <a href="#!"></a>
-    </div>
-    <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-      <nav class="menu">
-        <ul class="menu-nav">
-          <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link">portfolio</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">contact me</a></li>
-        </ul>
-      </nav>
-    </header>
-      <main id="home">
-    <div class="main-container">
-    <div class="main-text">
-      <h1 class="lg-heading">recent work</h1>
-      <h2 class="sm-heading">Look at a portfolio of my recent work</h2>
-      <button class="main-home-btn"><a href="portfolio.html" style="text-decoration: none">check it out</a></button>
-    </div>
-  </div>
-</main>
+    <main id="home">
+      <div class="main-container">
+        <div class="main-text">
+          <h1 class="lg-heading">RECENT WORK</h1>
+          <h2 class="md-heading">Look at a portfolio of my recent work</h2>
+          <button class="main-home-btn">
+            <a href="portfolio.html" style="text-decoration: none"
+              >check it out</a
+            >
+          </button>
+          <p class="sm-heading">or here to see my instagram</p>
+          <div class="icon">
+            <a href="https://www.instagram.com/ryanmchardy21/?hl=en">
+              <i class="fab fa-instagram fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
 
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
 
-
-  </div>
-  <script src="main.js"></script>
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
-
-

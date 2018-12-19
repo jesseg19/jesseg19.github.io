@@ -1,46 +1,304 @@
+@media screen and (min-width: 1171px) {
+  .lg-heading {
+    font-size: 5em; }
+  html.about {
+    background-position-y: bottom; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  html .about .self-img {
+    background-position: bottom; }
+  html.port .pic-type {
+    width: 25vw;
+    height: 35vh;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto;
+    grid-gap: 15vw;
+    align-items: center;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  html.port .pic-type {
+    display: block;
+    margin: auto; }
+  html.port .img {
+    display: block;
+    margin: auto; }
+  .night-pics {
+    flex-basis: calc(50%);
+    height: 10vh; } }
+
+@media screen and (max-width: 500px) {
+  html.port .pic-type {
+    display: block; }
+  .nightpage-pics {
+    display: flex; }
+  .night-pics {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    flex-direction: column; } }
+
+html.home-page {
+  background: #000 url("../img/IMG_9426.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 40%; }
+
 a {
   color: #fff;
   text-decoration: none; }
 
 body {
-  background: url("../img/IMG_8742.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
-.menu-nav {
-  list-style-type: none;
-  top: 0px; }
+.nav {
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+  padding: 0%;
+  z-index: 5; }
+  .nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease-out; }
+
+.one {
+  width: 100%; }
+
+.two {
+  width: 66%; }
+
+.three {
+  width: 75%; }
+
+.nav:hover div {
+  width: 120%; }
+
+.btn-close {
+  border-radius: 10px; }
+
+.side-nav {
+  padding: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  border-radius: 5px; }
+  .side-nav a {
+    margin: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s; }
+    .side-nav a:hover {
+      background-color: rgba(204, 204, 204, 0.5);
+      border-radius: 3px; }
+  .side-nav .nav-options a {
+    width: 74%; }
+  .side-nav .dropdown-btn {
+    float: right;
+    margin: -40px 15px 0 0;
+    border: 0;
+    border-radius: 3px;
+    background: rgba(10, 10, 10, 0);
+    color: white;
+    text-justify: auto;
+    height: 30px;
+    width: 30px; }
+    .side-nav .dropdown-btn:hover {
+      background-color: rgba(204, 204, 204, 0.5); }
+  .side-nav #dropdown-cont {
+    display: none; }
+    .side-nav #dropdown-cont a {
+      font-size: 95%;
+      margin-left: 40px; }
+  .side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 0;
+    font-size: 36px;
+    margin-left: 50px; }
+
+#home {
+  padding: 1px 20vw;
+  text-align: center; }
 
 .main-text {
-  text-align: center;
-  margin-top: 30vh; }
+  margin: auto;
+  margin-top: 19vh;
+  background: rgba(10, 10, 10, 0.65);
+  border-radius: 5px;
+  color: white;
+  padding: 1.5em;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .lg-heading {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin: 0; }
 
-.sm-heading {
+.md-heading {
   font-size: 2em;
   font-weight: 400;
   margin: 0; }
+
+.sm-heading {
+  font-size: 20px;
+  margin-bottom: 0; }
+
+.icon {
+  font-size: 18px;
+  padding: 5px 0; }
+  .icon :hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-out; }
 
 .main-home-btn {
   height: 30px;
   width: 150px;
   font-size: 20px;
-  color: black;
-  background-color: #ccc;
-  border: none; }
-  .main-home-btn:hover {
-    background-color: #777;
-    transition: all 0.3s ease-out; }
+  background-color: white;
+  border: none;
+  margin-top: 0.5em;
+  border-radius: 7px; }
   .main-home-btn a {
     color: black; }
+  .main-home-btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-out; }
+  .main-home-btn header {
+    position: fixed;
+    z-index: 2;
+    width: 100%; }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
+html.about {
+  background: url("../img/neon_sign.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center; }
+  html.about .about-main {
+    color: white;
+    margin-left: 5px; }
+
+html.port {
+  background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url("../img/IMG_5892.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white; }
+
+html .pic-type {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 9vh; }
+
+html .img {
+  display: flex;
+  padding: 0 2vw;
+  z-index: 2; }
+
+nav {
+  position: fixed; }
+  nav a {
+    margin-left: 1vw; }
+
+html.contact {
+  background: #333;
+  background-image: url("../img/contact-img.jpg");
+  background-size: 100% 700%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+html .main-contact {
+  text-align: center;
+  color: white; }
+  html .main-contact a {
+    color: #999; }
+
+.BandW-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.B-W-pics {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+.nightpage-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.night-pics {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+.city-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.cityscape-pics {
+  width: 40vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+.portrait-pics {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.portraits-pics {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+#wide-pics {
+  width: 100vw;
+  height: 65vw; }

@@ -1,0 +1,92 @@
+// Widescreens
+@include mediaXl {
+  //home page
+  .lg-heading {
+    font-size: 5em;
+  }
+
+  //about page
+  html {
+    &.about {
+      background-position-y: bottom;
+    }
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  //about page
+  html {
+    .about {
+      .self-img {
+        background-position: bottom;
+      }
+    }
+  }
+
+  //portfolio
+  html {
+    &.port {
+      .pic-type {
+        width: 25vw;
+        height: 35vh;
+        margin: auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto;
+        grid-gap: 15vw;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Tablets & Small laptops
+@include mediaMd {
+  //portfolio
+  html {
+    &.port {
+      .pic-type {
+        display: block;
+        margin: auto;
+      }
+      .img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  //night pics page
+  .night-pics {
+    flex-basis: calc(50%);
+    height: 10vh;
+  }
+}
+// Smartphones
+@include mediaSm {
+  //home page
+
+  //portfolio
+  html {
+    &.port {
+      .pic-type {
+        display: block;
+      }
+    }
+  }
+
+  .nightpage-pics {
+    display: flex;
+  }
+  .night-pics {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    flex-direction: column;
+  }
+}

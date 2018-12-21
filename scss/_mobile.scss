@@ -1,14 +1,42 @@
 // Widescreens
 @include mediaXl {
   //home page
-  .lg-heading {
-    font-size: 5em;
-  }
 
   //about page
   html {
     &.about {
       background-position-y: bottom;
+    }
+
+    //B&W page
+    &.blackwhite {
+      .B-W-pics {
+        width: 30vw;
+        height: 65vh;
+      }
+    }
+
+    //night page
+    &.nightpage {
+      .night-pics {
+        width: 30vw;
+        height: 65vh;
+      }
+    }
+
+    //cityscape page
+    &.city-scapes {
+      .cityscape-pics {
+        width: 30vw;
+        height: 95vh;
+      }
+    }
+    //portaits page
+    &.portraits-page {
+      .portraits-pics {
+        width: 30vw;
+        height: 95vh;
+      }
     }
   }
 }
@@ -22,20 +50,15 @@
         background-position: bottom;
       }
     }
-  }
 
-  //portfolio
-  html {
+    //portfolio
     &.port {
       .pic-type {
-        width: 25vw;
-        height: 35vh;
         margin: auto;
-        padding: 0;
         display: grid;
-        grid-template-columns: 200px 200px;
+        grid-template-columns: auto auto;
         grid-row: auto;
-        grid-gap: 15vw;
+        grid-gap: 5rem 10rem;
         align-items: center;
         text-align: center;
       }
@@ -57,36 +80,86 @@
         margin: auto;
       }
     }
-  }
-  //night pics page
-  .night-pics {
-    flex-basis: calc(50%);
-    height: 10vh;
+    //B&W page
+    &.blackwhite {
+      .B-W-pics {
+        width: 90vw;
+        height: 95vh;
+      }
+    }
+
+    //night page
+    &.nightpage {
+      .night-pics {
+        width: 90vw;
+        height: 95vh;
+      }
+    }
+
+    //cityscape page
+    &.city-scapes {
+      .cityscape-pics {
+        width: 90vw;
+        height: 95vh;
+      }
+    }
+    //portaits page
+    &.portraits-page {
+      .portraits-pics {
+        width: 90vw;
+        height: 95vh;
+      }
+    }
   }
 }
+
 // Smartphones
 @include mediaSm {
   //home page
-
-  //portfolio
   html {
+    &.home-page {
+      .main-text {
+        margin-top: 9vh;
+        padding: 0;
+      }
+    }
+
+    //portfolio
     &.port {
       .pic-type {
         display: block;
       }
     }
-  }
 
-  .nightpage-pics {
-    display: flex;
-  }
-  .night-pics {
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: auto;
-    flex-direction: column;
+    //B&W page
+    &.blackwhite {
+      .B-W-pics {
+        width: 90vw;
+        height: 65vh;
+      }
+    }
+
+    //night page
+    &.nightpage {
+      .night-pics {
+        width: 90vw;
+        height: 65vh;
+      }
+    }
+
+    //cityscape page
+    &.city-scapes {
+      .cityscape-pics {
+        width: 90vw;
+        height: 65vh;
+      }
+    }
+    //portraits page
+    &.portraits-page {
+      .portraits-pics {
+        width: 90vw;
+        height: 70vh;
+      }
+    }
   }
 }

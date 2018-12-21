@@ -121,13 +121,13 @@ body {
   }
 }
 #home {
-  padding: 1px 20vw;
+  padding: 0px 20vw;
   text-align: center;
 }
 
 .main-text {
   margin: auto;
-  margin-top: 19vh;
+  margin-top: 20vh;
   background: rgba(10, 10, 10, 0.65);
   border-radius: 5px;
   color: white;
@@ -216,7 +216,7 @@ html {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 9vh;
+    padding-top: 7vh;
   }
   .img {
     display: flex;
@@ -237,13 +237,14 @@ html {
   &.contact {
     background: #333;
     background-image: url("../img/contact-img.jpg");
-    background-size: 100% 700%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
   .main-contact {
     text-align: center;
     color: white;
+    size: 50rem;
     a {
       color: #999;
     }
@@ -283,6 +284,7 @@ html {
   align-items: center;
   flex: auto;
   flex-direction: column;
+  flex-basis: auto;
   box-sizing: border-box;
 }
 
@@ -312,7 +314,7 @@ html {
   flex-wrap: wrap;
 }
 .portraits-pics {
-  width: 40vw;
+  width: 45vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -324,5 +326,6 @@ html {
 
 #wide-pics {
   width: 100vw;
-  height: 65vw;
+  height: 75vw;
+  max-height: 100vh;
 }

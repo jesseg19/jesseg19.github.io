@@ -1,13 +1,10 @@
 // Widescreens
 @include mediaXl {
   //home page
-  html {
-    .home-page {
-      background-position-y: bottom;
-    }
 
-    //about page
-    .about {
+  //about page
+  html {
+    &.about {
       background-position-y: bottom;
     }
 
@@ -47,11 +44,9 @@
 // Desktops & Laptops
 @include mediaLg {
   //home page
+
+  //about page
   html {
-    &.home-page {
-      background-position-y: bottom;
-    }
-    //about page
     &.about {
       .self-img {
         background-position: bottom;

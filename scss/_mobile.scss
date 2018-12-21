@@ -70,8 +70,13 @@
 
 // Tablets & Small laptops
 @include mediaMd {
-  //portfolio
+  //home page
   html {
+    &.home-page {
+      background-position-y: 0%;
+    }
+
+    //portfolio
     &.port {
       .pic-type {
         display: block;
@@ -120,9 +125,10 @@
   //home page
   html {
     &.home-page {
+      background-position-y: 0%;
       .main-text {
         margin-top: 9vh;
-        padding: 0;
+        padding-bottom: 10;
       }
     }
 

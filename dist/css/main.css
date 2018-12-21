@@ -27,6 +27,8 @@
     text-align: center; } }
 
 @media screen and (max-width: 800px) {
+  html.home-page {
+    background-position-y: 0%; }
   html.port .pic-type {
     display: block;
     margin: auto; }
@@ -47,9 +49,11 @@
     height: 95vh; } }
 
 @media screen and (max-width: 500px) {
-  html.home-page .main-text {
-    margin-top: 9vh;
-    padding: 0; }
+  html.home-page {
+    background-position-y: 0%; }
+    html.home-page .main-text {
+      margin-top: 9vh;
+      padding-bottom: 10; }
   html.port .pic-type {
     display: block; }
   html.blackwhite .B-W-pics {

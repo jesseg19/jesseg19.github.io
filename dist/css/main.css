@@ -70,7 +70,8 @@ html.home-page {
   background-attachment: fixed;
   background-size: cover;
   background-position-x: 40%;
-  background-position-y: 5%; }
+  background-position-y: 5%;
+  background-repeat: no-repeat; }
 
 a {
   color: #fff;

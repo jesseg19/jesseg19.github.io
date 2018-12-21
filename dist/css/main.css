@@ -1,5 +1,7 @@
 @media screen and (min-width: 1621px) {
-  html.about {
+  html .home-page {
+    background-position-y: bottom; }
+  html .about {
     background-position-y: bottom; }
   html.blackwhite .B-W-pics {
     width: 30vw;
@@ -15,7 +17,9 @@
     height: 95vh; } }
 
 @media screen and (min-width: 801px) and (max-width: 1620px) {
-  html .about .self-img {
+  html.home-page {
+    background-position-y: bottom; }
+  html.about .self-img {
     background-position: bottom; }
   html.port .pic-type {
     margin: auto;
@@ -69,7 +73,8 @@ html.home-page {
   background: #000 url("../img/IMG_9426.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position-x: 40%; }
+  background-position-x: 40%;
+  background-position-y: 90%; }
 
 a {
   color: #fff;

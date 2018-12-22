@@ -57,10 +57,11 @@
     &.port {
       .pic-type {
         margin: auto;
+        margin-top: -7vh;
         display: grid;
         grid-template-columns: auto auto;
         grid-row: auto;
-        grid-gap: 5rem 10rem;
+        grid-gap: 5vh 10rem;
         align-items: center;
         text-align: center;
       }

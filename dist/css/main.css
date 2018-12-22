@@ -19,10 +19,11 @@
     background-position: bottom; }
   html.port .pic-type {
     margin: auto;
+    margin-top: -7vh;
     display: grid;
     grid-template-columns: auto auto;
     grid-row: auto;
-    grid-gap: 5rem 10rem;
+    grid-gap: 5vh 10rem;
     align-items: center;
     text-align: center; } }
 
@@ -221,7 +222,7 @@ html.about {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: 70%;
   background-position-x: center; }
   html.about .about-main {
     color: white;

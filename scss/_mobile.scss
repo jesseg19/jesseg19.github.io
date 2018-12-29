@@ -72,6 +72,13 @@
 
 // Tablets & Small laptops
 @include mediaMd {
+  //contact
+  html {
+    &.contact {
+      background-position: top;
+    }
+  }
+
   //home page
   html {
     &.home-page {
@@ -120,17 +127,17 @@
       }
     }
   }
-
-  //contact
-  html {
-    &.contact {
-      background-position: center;
-    }
-  }
 }
 
 // Smartphones
 @include mediaSm {
+  //contact
+  html {
+    &.contact {
+      background-position: 0;
+    }
+  }
+
   //home page
   html {
     &.home-page {
@@ -176,13 +183,6 @@
       .portraits-pics {
         width: 90vw;
         height: 70vh;
-      }
-    }
-
-    //contact
-    &.contact {
-      .main-contact {
-        background-color: beige;
       }
     }
   }

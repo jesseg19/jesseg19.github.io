@@ -29,6 +29,8 @@
     text-align: center; } }
 
 @media screen and (max-width: 800px) {
+  html.contact {
+    background-position: top; }
   html.home-page {
     background-position-y: 0%; }
   html.port .pic-type {
@@ -48,11 +50,11 @@
     height: 95vh; }
   html.portraits-page .portraits-pics {
     width: 90vw;
-    height: 95vh; }
-  html.contact {
-    background-position: center; } }
+    height: 95vh; } }
 
 @media screen and (max-width: 500px) {
+  html.contact {
+    background-position: 0; }
   html.home-page {
     background-position-y: 0%; }
     html.home-page .main-text {
@@ -71,9 +73,7 @@
     height: 65vh; }
   html.portraits-page .portraits-pics {
     width: 90vw;
-    height: 70vh; }
-  html.contact .main-contact {
-    background-color: beige; } }
+    height: 70vh; } }
 
 html.home-page {
   background: #000 url("../img/IMG_9426.jpg");
@@ -259,13 +259,15 @@ html.contact {
   background: #333;
   background-image: url("../img/contact-img.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 0; }
 
 html .main-contact {
   text-align: center;
-  size: 50rem; }
+  size: 50rem;
+  color: white; }
   html .main-contact a {
-    color: #999; }
+    color: black; }
 
 .BandW-pics {
   display: flex;

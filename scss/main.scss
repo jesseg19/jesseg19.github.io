@@ -241,12 +241,14 @@ html {
     background-image: url("../img/contact-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0;
   }
   .main-contact {
     text-align: center;
     size: 50rem;
+    color: white;
     a {
-      color: #999;
+      color: black;
     }
   }
 }

@@ -157,7 +157,9 @@ body {
 .icon {
   font-size: 18px;
   padding: 5px 0;
-
+  i {
+    color: whitesmoke;
+  }
   :hover {
     color: rgba($color: white, $alpha: 0.6);
     @include easeOut();
@@ -247,6 +249,10 @@ html {
     text-align: center;
     size: 50rem;
     color: white;
+    h2 {
+      padding-top: 3vh;
+      padding-bottom: 0;
+    }
     a {
       color: #bfd5ff;
     }

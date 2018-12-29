@@ -198,6 +198,8 @@ body {
 .icon {
   font-size: 18px;
   padding: 5px 0; }
+  .icon i {
+    color: whitesmoke; }
   .icon :hover {
     color: rgba(255, 255, 255, 0.6);
     transition: all 0.3s ease-out; }
@@ -264,6 +266,9 @@ html .main-contact {
   text-align: center;
   size: 50rem;
   color: white; }
+  html .main-contact h2 {
+    padding-top: 3vh;
+    padding-bottom: 0; }
   html .main-contact a {
     color: #bfd5ff; }
 

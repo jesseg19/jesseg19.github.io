@@ -12,7 +12,9 @@
     height: 95vh; }
   html.portraits-page .portraits-pics {
     width: 30vw;
-    height: 95vh; } }
+    height: 95vh; }
+  html.contact {
+    background-position: center; } }
 
 @media screen and (min-width: 801px) and (max-width: 1620px) {
   html.about .self-img {
@@ -29,8 +31,6 @@
     text-align: center; } }
 
 @media screen and (max-width: 800px) {
-  html.contact {
-    background-position: top; }
   html.home-page {
     background-position-y: 0%; }
   html.port .pic-type {
@@ -53,8 +53,6 @@
     height: 95vh; } }
 
 @media screen and (max-width: 500px) {
-  html.contact {
-    background-position: 0; }
   html.home-page {
     background-position-y: 0%; }
     html.home-page .main-text {
@@ -260,14 +258,14 @@ html.contact {
   background-image: url("../img/contact-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0; }
+  background-position: center; }
 
 html .main-contact {
   text-align: center;
   size: 50rem;
   color: white; }
   html .main-contact a {
-    color: black; }
+    color: #bfd5ff; }
 
 .BandW-pics {
   display: flex;

@@ -38,6 +38,10 @@
         height: 95vh;
       }
     }
+
+    &.contact {
+      background-position: center;
+    }
   }
 }
 
@@ -72,13 +76,6 @@
 
 // Tablets & Small laptops
 @include mediaMd {
-  //contact
-  html {
-    &.contact {
-      background-position: top;
-    }
-  }
-
   //home page
   html {
     &.home-page {
@@ -131,13 +128,6 @@
 
 // Smartphones
 @include mediaSm {
-  //contact
-  html {
-    &.contact {
-      background-position: 0;
-    }
-  }
-
   //home page
   html {
     &.home-page {

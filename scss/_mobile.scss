@@ -57,11 +57,12 @@
     &.port {
       .pic-type {
         margin: auto;
-        margin-top: -7vh;
+        margin-top: 0;
+        padding-top: 3vh;
         display: grid;
         grid-template-columns: auto auto;
         grid-row: auto;
-        grid-gap: 5vh 10rem;
+        grid-gap: 2vh 10rem;
         align-items: center;
         text-align: center;
       }
@@ -119,6 +120,13 @@
       }
     }
   }
+
+  //contact
+  html {
+    &.contact {
+      background-position: center;
+    }
+  }
 }
 
 // Smartphones
@@ -168,6 +176,13 @@
       .portraits-pics {
         width: 90vw;
         height: 70vh;
+      }
+    }
+
+    //contact
+    &.contact {
+      .main-contact {
+        background-color: beige;
       }
     }
   }

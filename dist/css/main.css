@@ -1,22 +1,22 @@
-@media screen and (min-width: 1621px) {
+@media screen and (min-width: 1451px) {
   html.about {
     background-position-y: bottom; }
   html.blackwhite .B-W-pics {
-    width: 30vw;
-    height: 65vh; }
+    width: 25vw;
+    height: 40vw; }
   html.nightpage .night-pics {
     width: 30vw;
-    height: 65vh; }
+    height: 40vw; }
   html.city-scapes .cityscape-pics {
     width: 30vw;
-    height: 95vh; }
+    height: 50vw; }
   html.portraits-page .portraits-pics {
     width: 30vw;
-    height: 95vh; }
+    height: 50vw; }
   html.contact {
     background-position: center; } }
 
-@media screen and (min-width: 801px) and (max-width: 1620px) {
+@media screen and (min-width: 981px) and (max-width: 1450px) {
   html.about .self-img {
     background-position: bottom; }
   html.port .pic-type {
@@ -28,9 +28,18 @@
     grid-row: auto;
     grid-gap: 2vh 10rem;
     align-items: center;
-    text-align: center; } }
+    text-align: center; }
+  html.blackwhite .B-W-pics {
+    width: 40vw;
+    height: 65vw; }
+  html.city-scapes .cityscape-pics {
+    width: 40vw;
+    height: 65vw; }
+  html.portraits-page .portraits-pics {
+    width: 40vw;
+    height: 70vw; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
   html.home-page {
     background-position-y: 0%; }
   html.port .pic-type {
@@ -40,17 +49,17 @@
     display: block;
     margin: auto; }
   html.blackwhite .B-W-pics {
-    width: 90vw;
-    height: 95vh; }
+    width: 80vw;
+    height: 100vw; }
   html.nightpage .night-pics {
     width: 90vw;
     height: 95vh; }
   html.city-scapes .cityscape-pics {
     width: 90vw;
-    height: 95vh; }
+    height: 105vw; }
   html.portraits-page .portraits-pics {
     width: 90vw;
-    height: 95vh; } }
+    height: 135vw; } }
 
 @media screen and (max-width: 500px) {
   html.home-page {
@@ -61,17 +70,17 @@
   html.port .pic-type {
     display: block; }
   html.blackwhite .B-W-pics {
-    width: 90vw;
-    height: 65vh; }
+    width: 100vw;
+    height: 130vw; }
   html.nightpage .night-pics {
     width: 90vw;
     height: 65vh; }
   html.city-scapes .cityscape-pics {
     width: 90vw;
-    height: 65vh; }
+    height: 125vw; }
   html.portraits-page .portraits-pics {
     width: 90vw;
-    height: 70vh; } }
+    height: 80vh; } }
 
 html.home-page {
   background: #000 url("../img/IMG_9426.jpg");
@@ -339,5 +348,5 @@ html .main-contact {
 
 #wide-pics {
   width: 100vw;
-  height: 75vw;
+  height: 60vw;
   max-height: 100vh; }

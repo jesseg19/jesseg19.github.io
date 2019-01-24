@@ -11,8 +11,8 @@
     //B&W page
     &.blackwhite {
       .B-W-pics {
-        width: 30vw;
-        height: 65vh;
+        width: 25vw;
+        height: 40vw;
       }
     }
 
@@ -20,7 +20,7 @@
     &.nightpage {
       .night-pics {
         width: 30vw;
-        height: 65vh;
+        height: 40vw;
       }
     }
 
@@ -28,14 +28,14 @@
     &.city-scapes {
       .cityscape-pics {
         width: 30vw;
-        height: 95vh;
+        height: 50vw;
       }
     }
     //portaits page
     &.portraits-page {
       .portraits-pics {
         width: 30vw;
-        height: 95vh;
+        height: 50vw;
       }
     }
 
@@ -71,6 +71,27 @@
         text-align: center;
       }
     }
+    //B&W page
+    &.blackwhite {
+      .B-W-pics {
+        width: 40vw;
+        height: 65vw;
+      }
+    }
+    //cityscape page
+    &.city-scapes {
+      .cityscape-pics {
+        width: 40vw;
+        height: 65vw;
+      }
+    }
+    //portaits page
+    &.portraits-page {
+      .portraits-pics {
+        width: 40vw;
+        height: 70vw;
+      }
+    }
   }
 }
 
@@ -96,8 +117,8 @@
     //B&W page
     &.blackwhite {
       .B-W-pics {
-        width: 90vw;
-        height: 95vh;
+        width: 80vw;
+        height: 100vw;
       }
     }
 
@@ -113,14 +134,14 @@
     &.city-scapes {
       .cityscape-pics {
         width: 90vw;
-        height: 95vh;
+        height: 105vw;
       }
     }
     //portaits page
     &.portraits-page {
       .portraits-pics {
         width: 90vw;
-        height: 95vh;
+        height: 135vw;
       }
     }
   }
@@ -148,8 +169,8 @@
     //B&W page
     &.blackwhite {
       .B-W-pics {
-        width: 90vw;
-        height: 65vh;
+        width: 100vw;
+        height: 130vw;
       }
     }
 
@@ -165,14 +186,14 @@
     &.city-scapes {
       .cityscape-pics {
         width: 90vw;
-        height: 65vh;
+        height: 125vw;
       }
     }
     //portraits page
     &.portraits-page {
       .portraits-pics {
         width: 90vw;
-        height: 70vh;
+        height: 80vh;
       }
     }
   }

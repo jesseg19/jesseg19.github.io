@@ -1,6 +1,12 @@
 @media screen and (min-width: 1451px) {
   html.about {
     background-position-y: bottom; }
+  html.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    html.contact .main-contact {
+      margin-top: 3em; }
   html.blackwhite .B-W-pics {
     width: 25vw;
     height: 40vw; }
@@ -19,6 +25,12 @@
 @media screen and (min-width: 981px) and (max-width: 1450px) {
   html.about .self-img {
     background-position: bottom; }
+  html.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    html.contact .main-contact {
+      margin-top: 3em; }
   html.port .pic-type {
     margin: auto;
     margin-top: 0;
@@ -42,6 +54,12 @@
 @media screen and (max-width: 980px) {
   html.home-page {
     background-position-y: 0%; }
+  html.contact {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: center; }
   html.port .pic-type {
     display: block;
     margin: auto; }
@@ -67,6 +85,12 @@
     html.home-page .main-text {
       margin-top: 9vh;
       padding-bottom: 10; }
+  html.contact {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: center; }
   html.port .pic-type {
     display: block; }
   html.blackwhite .B-W-pics {
@@ -265,21 +289,26 @@ nav {
     margin-left: 1vw; }
 
 html.contact {
-  background: #333;
-  background-image: url("../img/contact-img.jpg");
+  background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.2)), url("../img/contact-img.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position-y: 55%;
+  background-position-x: center; }
+  html.contact .icons a {
+    color: #f0e2e2; }
 
 html .main-contact {
+  color: #f0e2e2;
   text-align: center;
   size: 50rem;
-  color: white; }
+  font-weight: 600; }
   html .main-contact h2 {
     padding-top: 3vh;
     padding-bottom: 0; }
   html .main-contact a {
-    color: #bfd5ff; }
+    color: #bfd5ff;
+    font-weight: 100; }
 
 .BandW-pics {
   display: flex;

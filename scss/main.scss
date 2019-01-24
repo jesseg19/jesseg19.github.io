@@ -239,22 +239,29 @@ nav {
 //contact
 html {
   &.contact {
-    background: #333;
-    background-image: url("../img/contact-img.jpg");
+    background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.2)),
+      url("../img/contact-img.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: 55%;
+    background-position-x: center;
+    .icons a {
+      color: #f0e2e2;
+    }
   }
   .main-contact {
+    color: #f0e2e2;
     text-align: center;
     size: 50rem;
-    color: white;
+    font-weight: 600;
     h2 {
       padding-top: 3vh;
       padding-bottom: 0;
     }
     a {
       color: #bfd5ff;
+      font-weight: 100;
     }
   }
 }
